@@ -1,0 +1,254 @@
+<!DOCTYPE html.5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Menu/Css/estilos.css">
+    <title>Miscelania</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+<body>
+
+    <header>
+       <nav class="navegacion">
+            <ul class="menu">
+              <li><a href="#">Funciones</a></li>
+              <li><a href="#">Operadores</a>
+      
+                <ul class="submenu">
+                  <!--esta area calcula el area de un triangulo -->               
+                <li><a href="#">ejercicio 1</a>
+                    <nav class="">
+                    <form class="calculadora">
+                      <label for="base">Base del triángulo:</label>
+                      <input type="number" id="base" name="base" required>
+                      <label for="altura">Altura del triángulo:</label>
+                      <input type="number" id="altura" name="altura" required>
+                      <button type="submit">Calcular área</button>
+                      <p id="resultado"></p>
+                  </form>
+                    </nav>
+                  </li>
+                  <li><a href="#">ejercicio 2</a>
+                    <!--operaciones de sumandos-->
+                    <form onsubmit="return sumarNumeros()">
+                      <label for="numero1">Primer número:</label>
+                      <input type="number" id="numero1" name="numero1" required>
+                      <label for="numero2">Segundo número:</label>
+                      <input type="number" id="numero2" name="numero2" required>
+                      <button type="submit">Sumar</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="#">ejercicio 3</a>
+                    <form onsubmit="return calcularCuadrado()">
+                        <label for="numero">Número:</label>
+                        <input type="number" id="numero" name="numero" required>
+                        <button type="submit">Calcular cuadrado</button>
+                        <p id="resultado"></p>
+                    </form>
+                  
+                  
+                  
+                  
+                  </li>
+                  <li><a href="#">ejercicio 4</a>
+                    <form onsubmit="return convertirEuros()">
+                      <label for="euros">Cantidad en euros:</label>
+                      <input type="number" id="euros" name="euros" required>
+                      <button type="submit">Convertir</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="#">ejercicio 5</a>
+                    <form onsubmit="return calcularCuadrado()">
+                      <label for="lado">Lado del cuadrado:</label>
+                      <input type="number" id="lado" name="lado" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  
+                  
+                  </li>
+                  <li><a href="#">ejercicio 6</a>
+                    <form onsubmit="return calcularCilindro()">
+                      <label for="radio">Radio del cilindro:</label>
+                      <input type="number" id="radio" name="radio" required>
+                      <label for="altura">Altura del cilindro:</label>
+                      <input type="number" id="altura" name="altura" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                    </form>
+                  
+                  
+                  
+                  </li>
+                  <li><a href="#">ejercicio 7</a>
+                    <form onsubmit="return calcularCirculo()">
+                      <label for="radio">Radio del círculo:</label>
+                      <input type="number" id="radio" name="radio" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  
+                  </li>
+                  <li><a href="#">ejercicio 8</a>
+                    <form onsubmit="return calcularPromedio()">
+                      <label for="numero1">Primer número:</label>
+                      <input type="number" id="numero1" name="numero1" required>
+                      <label for="numero2">Segundo número:</label>
+                      <input type="number" id="numero2" name="numero2" required>
+                      <label for="numero3">Tercer número:</label>
+                      <input type="number" id="numero3" name="numero3" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">ciclos</a>
+                <ul class="submenu">
+                  <div class="form">
+                  <li><a href="">ejercicio 1</a>
+                    <form onsubmit="return imprimirMultiplos()">
+                      <label for="numero">Introduzca un número:</label>
+                      <input type="number" id="numero" name="numero" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 2</a>
+                    <form onsubmit="return imprimirImpares()">
+                      <button type="submit">Imprimir</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 3</a>
+                    <form onsubmit="return imprimirPares()">
+                      <button type="submit">Imprimir</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 4</a>
+                    <form onsubmit="return mostrarCuadrados()">
+                    <button type="submit">Mostrar cuadrados</button>
+                    <p id="resultado"></p>
+                </form>
+                  </li>
+                  <li><a href="">ejercicio 5</a>
+                    <form onsubmit="return sumarCuadrados()">
+                    <button type="submit">Calcular</button>
+                    <p id="resultado"></p>
+                </form>
+                  </li>
+                  <li><a href="">ejercicio 6</a>
+                    <form onsubmit="return mostrarNumeros()">
+                      <label for="numero1">Primer número:</label>
+                      <input type="number" id="numero1" name="numero1" required>
+                      <label for="numero2">Segundo número:</label>
+                      <input type="number" id="numero2" name="numero2" required>
+                      <button type="submit">Mostrar</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 7</a>
+                    <form onsubmit="return sumarNumeros()">
+                      <label for="numero">Introduzca un número (0 para salir):</label>
+                      <input type="number" id="numero" name="numero" required>
+                      <button type="submit">Sumar</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+
+                 
+                </ul>
+              
+              </li>
+              <li><a href="#">Condicionales</a>
+              <ul class="submenu">
+                  <li><a href="">ejercicio 1</a>
+                    <form onsubmit="return determinarSigno()">
+                      <label for="numero">Número:</label>
+                      <input type="number" id="numero" name="numero" required>
+                      <button type="submit">Determinar</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 2</a>
+                    <form onsubmit="return encontrarMayorMenor()">
+                      <label for="numero1">Primer número:</label>
+                      <input type="number" id="numero1" name="numero1" required>
+                      <label for="numero2">Segundo número:</label>
+                      <input type="number" id="numero2" name="numero2" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 3</a>
+                    <form onsubmit="return leerNumeros()">
+                    <label for="numero1">Primer número:</label>
+                    <input type="number" id="numero1" name="numero1" required>
+                    <label for="numero2">Segundo número:</label>
+                    <input type="number" id="numero2" name="numero2" required>
+                    <label for="numero3">Tercer número:</label>
+                    <input type="number" id="numero3" name="numero3" required>
+                    <button type="submit">Leer</button>
+                    <p id="resultado"></p>
+                </form>
+                 </li>
+                  <li><a href="">ejercicio 4</a>
+                    <form onsubmit="return operarNumeros()">
+                      <label for="numero1">Primer número (A):</label>
+                      <input type="number" id="numero1" name="numero1" required>
+                      <label for="numero2">Segundo número (B):</label>
+                      <input type="number" id="numero2" name="numero2" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 5</a>
+                    <form onsubmit="return calcularCociente()">
+                      <label for="numero1">Primer número (A):</label>
+                      <input type="number" id="numero1" name="numero1" required>
+                      <label for="numero2">Segundo número (B):</label>
+                      <input type="number" id="numero2" name="numero2" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  </li>
+                  <li><a href="">ejercicio 6</a>
+                    <form onsubmit="return operarNumeros()">
+                      <label for="numero1">Primer número:</label>
+                      <input type="number" id="numero1" name="numero1" required>
+                      <label for="numero2">Segundo número:</label>
+                      <input type="number" id="numero2" name="numero2" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                  
+                  
+                  </li>
+                  <li><a href="">ejercicio 7</a>
+                    <form onsubmit="return esBisiesto()">
+                      <label for="anio">Introduzca un año:</label>
+                      <input type="number" id="anio" name="anio" required>
+                      <button type="submit">Calcular</button>
+                      <p id="resultado"></p>
+                  </form>
+                </div>
+                  <body>
+                  
+                  </body>
+                  </li>
+
+
+              </ul>
+              
+              
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+</body>
+  </html>  
